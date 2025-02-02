@@ -1,51 +1,30 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-type Mode = 'light' | 'dark' | 'system';
+type Mode = 'light' | 'dark';
 
 export const useDarkMode = () => {
-  const [mode, setMode] = useState<Mode>('system');
-
-  const applyTheme = useCallback((isDark: boolean) => {
-    document.documentElement.classList.toggle('dark', isDark);
-  }, []);
-
-  const changeMode = useCallback((newMode: Mode) => {
-    setMode(newMode);
-    localStorage.setItem('theme', newMode);
-  }, []);
+  const [mode, setMode] = useState<Mode>('light');
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as Mode | null;
     if (savedTheme) {
       setMode(savedTheme);
+      document.documentElement.classList.toggle('dark', savedTheme === 'dark');
     }
+  }, []);
 
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  const changeMode = (newMode: Mode) => {
+    setMode(newMode);
+    localStorage.setItem('theme', newMode);
 
-    const handleSystemThemeChange = (event: MediaQueryListEvent) => {
-      if (mode === 'system') {
-        applyTheme(event.matches);
-      }
-    };
-
-    const applyCurrentTheme = () => {
-      if (mode === 'system') {
-        applyTheme(mediaQuery.matches);
-      } else {
-        applyTheme(mode === 'dark');
-      }
-    };
-
-    applyCurrentTheme();
-
-    mediaQuery.addEventListener('change', handleSystemThemeChange);
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleSystemThemeChange);
-    };
-  }, [mode, applyTheme]);
+    if (newMode === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  };
 
   return { mode, changeMode };
 };

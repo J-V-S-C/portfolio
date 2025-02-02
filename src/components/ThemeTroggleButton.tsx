@@ -5,7 +5,7 @@ import React from 'react';
 import { useDarkModeContext } from './DarkModeProvider';
 
 interface ThemeToggleButtonProps {
-  classname?: string; // Permite passar classes personalizadas
+  classname?: string;
 }
 
 export const ThemeTroggleButton: React.FC<ThemeToggleButtonProps> = ({

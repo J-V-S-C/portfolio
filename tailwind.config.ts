@@ -2,7 +2,7 @@ import tailwindcssAnimate from 'tailwindcss-animate';
 import type { Config } from 'tailwindcss';
 
 export default {
-  darkMode: ['class'],
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -16,7 +16,22 @@ export default {
         mono: ['Menlo', 'monospace'],
       },
       colors: {
-        background: '#E9E8E8',
+        background: {
+          DEFAULT: '#d1d1d1',
+          dark: '#181818',
+        },
+        text: {
+          DEFAULT: '#151515',
+          dark: '#F5F5F5',
+        },
+        textPrimary: {
+          DEFAULT: '#333333',
+          dark: '#EAEAEA',
+        },
+        border: {
+          DEFAULT: '#C1C0C0',
+          dark: '#3A3A3A',
+        },
         foreground: 'hsl(var(--foreground))',
         card: {
           DEFAULT: 'hsl(var(--card))',
@@ -25,10 +40,6 @@ export default {
         popover: {
           DEFAULT: 'hsl(var(--popover))',
           foreground: 'hsl(var(--popover-foreground))',
-        },
-        primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
@@ -46,7 +57,6 @@ export default {
           DEFAULT: 'hsl(var(--destructive))',
           foreground: 'hsl(var(--destructive-foreground))',
         },
-        border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         chart: {
