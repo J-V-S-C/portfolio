@@ -12,10 +12,16 @@ export const Title = () => {
           alt="Picture of the author"
           className="mt-8 mb-4 md:mt-16 md:mb-8"
         />
+
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center max-w-[90%]">
           Software Engineer
         </h1>
+
+        <p className="text-lg md:text-xl lg:text-2xl font-medium text-center mt-4 text-gray-600 dark:text-gray-300">
+          {"Let's change the world together!"}
+        </p>
       </div>
+
       <MovingText />
     </div>
   );
