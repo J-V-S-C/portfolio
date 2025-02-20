@@ -18,7 +18,7 @@ import {
 
 export const Skills = () => {
   return (
-    <div className="p-12 md:p-24 lg:p-48 text-textPrimary dark:text-textPrimary-dark py-20">
+    <div className="mt-64 p-12 md:p-24 lg:px-48 text-textPrimary dark:text-textPrimary-dark ">
       <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-center">
         My Skills
       </h1>

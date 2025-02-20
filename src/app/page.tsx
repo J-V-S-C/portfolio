@@ -1,6 +1,6 @@
 import { DarkModeProvider } from '@/components/DarkModeProvider';
 import { Header } from './header/page';
-import { Title } from './title/page';
+import { Title } from './hero/page';
 import { Projects } from './projects/page';
 import { Skills } from './skills/page';
 import { Footer } from './footer/page';

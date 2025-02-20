@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const Title = () => {
   return (
     <div className="w-full">
-      <div className="bg-background dark:bg-background-dark text-text dark:text-text-dark flex flex-col items-center justify-center min-h-screen px-4">
+      <div className="bg-background dark:bg-background-dark text-text dark:text-text-dark flex flex-col items-center justify-center min-h-[80vh] px-4">
         <Image
           src="https://cdn-icons-png.freepik.com/512/18/18148.png"
           width={50}

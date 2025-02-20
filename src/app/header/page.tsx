@@ -27,7 +27,7 @@ export const Header = () => {
         {[
           { href: '/', label: 'HOME' },
           { href: '/about', label: 'ABOUT ME' },
-          { href: '/vision', label: 'VISION' },
+          { href: '/goals', label: 'GOALS' },
           { href: '/resume', label: 'RESUME' },
         ].map((link) => (
           <Link

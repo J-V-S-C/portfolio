@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from 'lucide-react';
 import Image from 'next/image';
 
 export const Projects = () => {
@@ -29,19 +30,17 @@ export const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen px-4 sm:px-8 md:px-12 lg:px-48 text-textPrimary dark:text-textPrimary-dark py-20">
-      <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-center">
+    <div className="min-h-screen px-4 sm:px-12 md:px-24 lg:px-48 text-textPrimary dark:text-textPrimary-dark mt-64">
+      <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-center">
         My Works
       </h1>
 
       <div className="mt-12 space-y-16">
         {projects.map((project, index) => (
           <div key={index} className="flex flex-col gap-12">
-            {/* Divider above each project */}
             <hr className="w-full border-t-2 border-border dark:border-border-dark" />
 
             <div className="flex flex-col md:flex-row items-center gap-8">
-              {/* Project Image */}
               <div className="w-full md:w-1/2">
                 <Image
                   className="rounded-lg shadow-lg"
@@ -52,24 +51,22 @@ export const Projects = () => {
                 />
               </div>
 
-              {/* Project Details */}
               <div className="w-full md:w-1/2 flex flex-col space-y-4">
                 <h2 className="font-bold text-3xl">{project.title}</h2>
                 <p className="text-lg text-gray-600 dark:text-gray-300">
                   {project.description}
                 </p>
 
-                {/* Project Link */}
                 <a
                   href={project.link}
-                  className="font-bold text-xl text-primary dark:text-primary-dark hover:underline"
+                  className="font-bold text-xl text-primary dark:text-primary-dark relative inline-flex items-center gap-1 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-[9rem] after:h-[2px] after:bg-current after:scale-x-0 after:origin-left after:transition-transform after:duration-300 hover:after:scale-x-100"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Project →
+                  View Project
+                  <ArrowRightIcon className="w-5 h-5" />
                 </a>
 
-                {/* Technologies Used */}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.tecs.map((tec, tecIndex) => (
                     <span
