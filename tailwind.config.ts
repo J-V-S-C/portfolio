@@ -18,7 +18,7 @@ export default {
       colors: {
         background: {
           DEFAULT: '#d1d1d1',
-          dark: '#181818',
+          dark: '#121212',
         },
         text: {
           DEFAULT: '#151515',

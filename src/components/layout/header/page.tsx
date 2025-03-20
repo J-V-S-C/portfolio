@@ -1,5 +1,5 @@
 'use client';
-import { ThemeTroggleButton } from '@/components/ThemeTroggleButton';
+import { ThemeTroggleButton } from '@/components/shared/ThemeTroggleButton';
 import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
@@ -26,8 +26,7 @@ export const Header = () => {
       >
         {[
           { href: '/', label: 'HOME' },
-          { href: '/about', label: 'ABOUT ME' },
-          { href: '/goals', label: 'GOALS' },
+          { href: '/aboutMe', label: 'ABOUT ME' },
           { href: '/resume', label: 'RESUME' },
         ].map((link) => (
           <Link

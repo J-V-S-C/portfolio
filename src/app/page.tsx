@@ -1,9 +1,9 @@
-import { DarkModeProvider } from '@/components/DarkModeProvider';
-import { Header } from './header/page';
-import { Title } from './hero/page';
-import { Projects } from './projects/page';
-import { Skills } from './skills/page';
-import { Footer } from './footer/page';
+import { DarkModeProvider } from '@/components/shared/DarkModeProvider';
+import { Header } from '@/components/layout/header/page';
+import { Title } from '@/components/layout/hero/page';
+import { Projects } from '@/components/layout/projects/page';
+import { Skills } from '@/components/layout/skills/page';
+import { Footer } from '@/components/layout/footer/page';
 
 export default function Home() {
   return (

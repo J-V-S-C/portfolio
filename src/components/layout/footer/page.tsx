@@ -8,8 +8,7 @@ export const Footer = () => {
         <nav className="flex flex-wrap justify-center gap-6">
           {[
             { href: '/', label: 'HOME' },
-            { href: '/about', label: 'ABOUT ME' },
-            { href: '/goals', label: 'GOALS' },
+            { href: '/aboutMe', label: 'ABOUT ME' },
             { href: '/resume', label: 'RESUME' },
           ].map((link) => (
             <Link
@@ -25,22 +24,22 @@ export const Footer = () => {
         <div className="flex gap-6 relative">
           {[
             {
-              href: 'https://github.com/seu-usuario',
+              href: 'https://github.com/J-V-S-C',
               icon: <Github size={28} />,
               label: 'GitHub',
             },
             {
-              href: 'https://www.linkedin.com/in/seu-usuario',
+              href: 'https://www.linkedin.com/in/jo%C3%A3o-cortabitart-0183062b2/',
               icon: <Linkedin size={28} />,
               label: 'LinkedIn',
             },
             {
-              href: 'https://wa.me/seu-numero',
+              href: 'https://wa.me/5555991747273',
               icon: <MessageCircle size={28} />,
               label: 'WhatsApp',
             },
             {
-              href: 'mailto:seu-email@email.com',
+              href: 'mailto:joaovictorcortabitart@gmail.com',
               icon: <Mail size={28} />,
               label: 'Email',
             },
