@@ -1,5 +1,4 @@
 import { MovingText } from '@/components/shared/MovingText';
-import Image from 'next/image';
 
 export const Title = () => {
   return (
