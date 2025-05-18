@@ -1,3 +1,2 @@
-##Portfolio in construction
+#Portfolio
 
-This is my first portfolio, feel free to see it and know more about me and my projects!! :)
