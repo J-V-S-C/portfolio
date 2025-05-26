@@ -9,20 +9,20 @@ export const Projects = () => {
 
   const projects = [
     {
-      image: '/media/rentx.png',
-      title: 'RentX',
+      image: '/media/LMS.jpeg',
+      title: 'LMS Landing Page',
       description:
-        'RentX is a scalable car rental API built with Node.js, TypeScript, PostgreSQL, and TypeORM, featuring optimized database structuring and Docker integration.',
-      link: 'https://github.com/J-V-S-C/Rentx',
-      tecs: ['Node.js', 'TypeScript', 'PostgreSQL', 'Docker'],
+        'A modern landing page designed for Learning Management Systems (LMS), focused on visual engagement and clear communication. Featuring a responsive, intuitive design, it showcases key features, measurable impact metrics, flexible pricing plans, and a sleek sign-up/login portal. Built with Next.js and TypeScript, this project demonstrates strong skills in crafting well-structured, fluid interfaces aligned with modern web design trends.',
+      link: '#',
+      tecs: ['HTML5', 'CSS3', 'Next.js', 'TypeScript', 'Web Design', 'Web Development'],
     },
     {
-      image: '/media/interfaceReact.png',
-      title: 'Basic Interface',
+      image: '/media/ShoppingSystem.jpeg',
+      title: 'Shopping System',
       description:
-        'A  modern and intuitive eCommerce interface designed for seamless shopping experiences, featuring dynamic UI components and a clean, responsive design. Built with React and JavaScript, this project showcases my ability to create engaging user interfaces that enhance usability and performance. Check out the repository and see it in action!',
+        'A  modern and intuitive eCommerce designed for seamless shopping experiences, featuring dynamic UI components and a clean, responsive design. Built with JavaScript, this project showcases my ability to create engaging user interfaces that enhance usability and performance. Check out the repository and see it in action!',
       link: 'https://github.com/J-V-S-C/Interface_React',
-      tecs: ['React', 'Javascript'],
+      tecs: ['HTML5', 'CSS3', 'Javascript', 'Mysql'],
     },
     {
       image: '/media/ecommerce.png',

@@ -81,7 +81,7 @@ export const Skills = () => {
                 icon: (
                   <Settings size={24} className="shrink-0 hidden sm:block" />
                 ),
-                text: 'Docker, Kubernetes',
+                text: 'Docker',
               },
               {
                 icon: (
@@ -98,7 +98,7 @@ export const Skills = () => {
             skills: [
               {
                 icon: <Bug size={24} className="shrink-0 hidden sm:block" />,
-                text: 'Jest, Mocha, Chai',
+                text: 'Jest',
               },
               {
                 icon: (
@@ -106,10 +106,10 @@ export const Skills = () => {
                 ),
                 text: 'ESLint, Prettier',
               },
-              {
+              {/*{
                 icon: <Code size={24} className="shrink-0 hidden sm:block" />,
                 text: 'Cypress, Playwright',
-              },
+              },*/}
             ],
           },
           {
