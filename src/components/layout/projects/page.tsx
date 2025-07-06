@@ -13,7 +13,7 @@ export const Projects = () => {
             tecs: ['HTML5', 'CSS3', 'Next.js', 'TypeScript', 'Web Design', 'Web Development'],
         },
         {
-            video: '/media/ShoppingSystem.jpeg',
+            video: '/media/shopping_system.mp4',
             title: 'Shopping System',
             description:
                 'A  modern and intuitive eCommerce designed for seamless shopping experiences, featuring dynamic UI components and a clean, responsive design. Built with JavaScript, this project showcases my ability to create engaging user interfaces that enhance usability and performance. Check out the repository and see it in action!',
@@ -21,12 +21,20 @@ export const Projects = () => {
             tecs: ['HTML5', 'CSS3', 'Javascript', 'Mysql'],
         },
         {
-            video: '/media/ecommerce.png',
+            video: '/media/ecommerce.mp4',
             title: 'Ecommerce',
             description:
                 'E-commerce platform developed collaboratively with a friend, where I played a key role in designing and implementing both the frontend and backend. The project leverages modern technologies such as React, Redux, and PostgreSQL for a seamless and scalable user experience.',
             link: '#',
             tecs: ['javascript', 'React', 'Redux', 'Postgresql', 'Python'],
+        },
+        {
+            video: '/media/flashcard.mp4',
+            title: 'Flashcard-API',
+            description:
+                'A flashcard API to create, read, update and delete flashcards and decks, it was created entirely in Golang and documented with swagger.',
+            link: 'https://github.com/J-V-S-C/flashcards-go',
+            tecs: ['Golang', 'Swagger', 'Clean archtecture', 'Design Patterns', 'RESTful API'],
         },
     ];
 
