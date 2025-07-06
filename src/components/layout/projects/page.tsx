@@ -1,15 +1,11 @@
 'use client';
 import { ArrowRightIcon } from 'lucide-react';
-import Image from 'next/image';
-import { useState } from 'react';
-import { motion } from 'framer-motion';
 
 export const Projects = () => {
-    const [zoomedImage, setZoomedImage] = useState<string | null>(null);
 
     const projects = [
         {
-            image: '/media/LMS.jpeg',
+            video: '/media/lms.mp4',
             title: 'LMS Landing Page',
             description:
                 'A modern landing page designed for Learning Management Systems (LMS), focused on visual engagement and clear communication. Featuring a responsive, intuitive design, it showcases key features, measurable impact metrics, flexible pricing plans, and a sleek sign-up/login portal. Built with Next.js and TypeScript, this project demonstrates strong skills in crafting well-structured, fluid interfaces aligned with modern web design trends.',
@@ -17,7 +13,7 @@ export const Projects = () => {
             tecs: ['HTML5', 'CSS3', 'Next.js', 'TypeScript', 'Web Design', 'Web Development'],
         },
         {
-            image: '/media/ShoppingSystem.jpeg',
+            video: '/media/ShoppingSystem.jpeg',
             title: 'Shopping System',
             description:
                 'A  modern and intuitive eCommerce designed for seamless shopping experiences, featuring dynamic UI components and a clean, responsive design. Built with JavaScript, this project showcases my ability to create engaging user interfaces that enhance usability and performance. Check out the repository and see it in action!',
@@ -25,7 +21,7 @@ export const Projects = () => {
             tecs: ['HTML5', 'CSS3', 'Javascript', 'Mysql'],
         },
         {
-            image: '/media/ecommerce.png',
+            video: '/media/ecommerce.png',
             title: 'Ecommerce',
             description:
                 'E-commerce platform developed collaboratively with a friend, where I played a key role in designing and implementing both the frontend and backend. The project leverages modern technologies such as React, Redux, and PostgreSQL for a seamless and scalable user experience.',
@@ -47,14 +43,17 @@ export const Projects = () => {
 
                         <div className="flex flex-col md:flex-row items-center gap-8">
                             <div className="w-full md:w-1/2">
-                                <Image
-                                    className="rounded-lg shadow-lg cursor-zoom-in"
-                                    src={project.image}
+                                <video
+                                    className="rounded-lg shadow-lg cursor-pointer"
                                     width={700}
                                     height={400}
-                                    alt={project.title}
-                                    onClick={() => setZoomedImage(project.image)}
-                                />
+                                    controls
+                                    muted
+                                    loop
+                                >
+                                    <source src={project.video} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
 
                             <div className="w-full md:w-1/2 flex flex-col space-y-4">
@@ -94,34 +93,6 @@ export const Projects = () => {
                     </div>
                 ))}
             </div>
-
-            {zoomedImage && (
-                <div
-                    className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
-                    onClick={() => setZoomedImage(null)}
-                >
-                    <motion.div
-                        initial={{ scale: 0.5, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        exit={{ scale: 0.5, opacity: 0 }}
-                        className="relative"
-                    >
-                        <Image
-                            src={zoomedImage}
-                            width={1000}
-                            height={600}
-                            alt="Zoomed Project"
-                            className="rounded-lg shadow-2xl"
-                        />
-                        <button
-                            className="absolute top-2 right-2 text-white bg-black bg-opacity-60 px-3 py-1 rounded-full"
-                            onClick={() => setZoomedImage(null)}
-                        >
-                            ✕
-                        </button>
-                    </motion.div>
-                </div>
-            )}
         </div>
     );
 };
