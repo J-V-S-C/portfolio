@@ -7,11 +7,11 @@ import { Header } from '@/components/layout/header/page';
 import { Footer } from '@/components/layout/footer/page';
 
 const textBlocks = [
-  "I’ve always been curious about technology, breaking things apart just to see how they worked. My journey into programming started as a simple experiment, just me messing around and trying to figure things out. But then my computer broke, and I couldn't afford a new one. At that moment, it felt like the end of the road.",
-  'Instead of giving up, I found another way. I enrolled in a **technical school**, where I could continue learning and finally have access to a computer again. What started as a hobby quickly turned into a **deep passion**. I began building projects, pushing my limits, and eventually saved up enough to buy my own computer. That was a turning point.',
-  'Now, **three years later**, I’m a **Full Stack Developer** with a relentless drive to keep moving forward. My goal is to **always reach the next level**—whether by mastering new technologies, optimizing workflows, or creating scalable solutions that make a real impact.',
-  'I thrive in both **frontend** and **backend development**, working with technologies like **React, Next.js, Tailwind**, **Node.js, Express**, and **PostgreSQL**. I strongly believe in **Clean Code, SOLID principles,** and **scalable architecture** to build software that truly matters.',
-  'But beyond just writing code, I want to be **relevant**. My ultimate goal is to use technology **to change the world** in some way—to create solutions that improve lives, solve real problems, and leave a lasting impact. Every line of code I write is a step toward that mission.',
+  'I am a Software Engineer and Full-Stack Developer focused on building scalable and maintainable systems using TypeScript and Golang.',
+  'My stack includes **Node.js**, **Express**, **Nest.js**, **React**, and **Next.js**, with **PostgreSQL**, **MySQL**, and **Firebase** for data persistence.',
+  'I apply **SOLID**, **Clean Code**, **TDD**, **DDD**, and **Clean Architecture** to structure applications with clear boundaries and long-term maintainability.',
+  'I work across **frontend** and **backend**, designing REST APIs, modeling domains, and implementing consistent testing strategies.',
+  'Continuous learning is part of my routine, and I focus on delivering practical solutions that solve real problems with clarity and efficiency.',
 ];
 
 const formatText = (text: string) => {
@@ -20,32 +20,32 @@ const formatText = (text: string) => {
     .replace(/React/g, '<span class="text-blue-500 font-bold">React</span>')
     .replace(
       /Next\.js/g,
-      '<span class="text-purple-500 font-bold">Next.js</span>'
+      '<span class="text-purple-500 font-bold">Next.js</span>',
     )
     .replace(
       /Tailwind/g,
-      '<span class="text-cyan-500 font-bold">Tailwind</span>'
+      '<span class="text-cyan-500 font-bold">Tailwind</span>',
     )
     .replace(
       /Node\.js/g,
-      '<span class="text-green-500 font-bold">Node.js</span>'
+      '<span class="text-green-500 font-bold">Node.js</span>',
     )
     .replace(
       /Express/g,
-      '<span class="text-green-600 font-bold">Express</span>'
+      '<span class="text-green-600 font-bold">Express</span>',
     )
     .replace(
       /PostgreSQL/g,
-      '<span class="text-yellow-500 font-bold">PostgreSQL</span>'
+      '<span class="text-yellow-500 font-bold">PostgreSQL</span>',
     )
     .replace(
       /Clean Code/g,
-      '<span class="text-red-500 font-bold">Clean Code</span>'
+      '<span class="text-red-500 font-bold">Clean Code</span>',
     )
     .replace(/SOLID/g, '<span class="text-orange-500 font-bold">SOLID</span>')
     .replace(
       /scalable architecture/g,
-      '<span class="text-indigo-500 font-bold">scalable architecture</span>'
+      '<span class="text-indigo-500 font-bold">scalable architecture</span>',
     );
 };
 
