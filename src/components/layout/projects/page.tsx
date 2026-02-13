@@ -8,7 +8,7 @@ export const Projects = () => {
       title: 'Forum API',
       description:
         'RESTful forum API built with NestJS and TypeScript using DDD and Clean Architecture. Supports students, questions, and answers. Authentication via JWT (RSA256). Prisma + PostgreSQL for persistence. Tested with Vitest covering business rules and auth flows.',
-      link: '#',
+      link: 'https://github.com/J-V-S-C/nest-clean-forum',
       tecs: [
         'TypeScript',
         'Nest.js',
