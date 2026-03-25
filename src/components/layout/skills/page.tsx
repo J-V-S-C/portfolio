@@ -33,11 +33,11 @@ export const Skills = () => {
             skills: [
               {
                 icon: <Code size={24} className="shrink-0 hidden sm:block" />,
-                text: 'TypeScript, JavaScript (ES6+)',
+                text: 'TypeScript, JavaScript (ES6+), HTML5, CSS3',
               },
               {
                 icon: <Code size={24} className="shrink-0 hidden sm:block" />,
-                text: 'React.js, Next.js',
+                text: 'React.js, Next.js, Vite',
               },
               {
                 icon: <Code size={24} className="shrink-0 hidden sm:block" />,
@@ -52,7 +52,7 @@ export const Skills = () => {
             skills: [
               {
                 icon: <Code size={24} className="shrink-0 hidden sm:block" />,
-                text: 'Node.js, Express.js, Nest.js, Golang',
+                text: 'Node.js, Express.js, Nest.js, Golang, GraphQL',
               },
               {
                 icon: (
@@ -75,13 +75,13 @@ export const Skills = () => {
             skills: [
               {
                 icon: <Cloud size={24} className="shrink-0 hidden sm:block" />,
-                text: 'Vercel, AWS',
+                text: 'Vercel, AWS, Oracle, GCP',
               },
               {
                 icon: (
                   <Settings size={24} className="shrink-0 hidden sm:block" />
                 ),
-                text: 'Docker, Kubernets(basic)',
+                text: 'Docker, Kubernets',
               },
               {
                 icon: (
@@ -98,7 +98,7 @@ export const Skills = () => {
             skills: [
               {
                 icon: <Code size={24} className="shrink-0 hidden sm:block" />,
-                text: 'Unit tests, Integration tests',
+                text: 'Unit tests, Integration tests, E2E',
               },
               {
                 icon: <Bug size={24} className="shrink-0 hidden sm:block" />,

@@ -4,21 +4,22 @@ import { ArrowRightIcon } from 'lucide-react';
 export const Projects = () => {
   const projects = [
     {
-      video: '/media/',
-      title: 'Forum API',
+      video: '/media/mindbox.mp4',
+      title: 'MindBox - Fullstack Application',
       description:
-        'RESTful forum API built with NestJS and TypeScript using DDD and Clean Architecture. Supports students, questions, and answers. Authentication via JWT (RSA256). Prisma + PostgreSQL for persistence. Tested with Vitest covering business rules and auth flows.',
-      link: 'https://github.com/J-V-S-C/nest-clean-forum',
+        'A high-performance fullstack platform designed to organize technical learning through hierarchical roadmaps and knowledge expiration tracking. Features a Go/GraphQL backend with a memory footprint < 20MB and a type-safe Next.js 16 frontend. Implements secure session management via httpOnly cookies and automated CI/CD pipelines.',
+      link: 'https://github.com/J-V-S-C/mindbox-frontend',
       tecs: [
+        'Go',
+        'GraphQL',
+        'Next.js 16',
         'TypeScript',
-        'Nest.js',
-        'Prisma',
         'PostgreSQL',
-        'Vitest',
-        'JWT (RSA256)',
-        'DDD',
-        'Clean Architecture',
-        'Swagger',
+        'Tailwind CSS 4',
+        'Apollo Client',
+        'Docker',
+        'GitHub Actions',
+        'Caddy',
       ],
     },
     {
@@ -36,7 +37,6 @@ export const Projects = () => {
         'Web Development',
       ],
     },
-
     {
       video: '/media/shopping_system.mp4',
       title: 'Shopping System',
@@ -52,6 +52,24 @@ export const Projects = () => {
         'A flashcard API to create, read, update and delete flashcards and decks, it was created entirely in Golang and documented with swagger.',
       link: 'https://github.com/J-V-S-C/flashcards-go',
       tecs: ['Golang', 'Swagger', 'Clean archtecture', 'RESTful API'],
+    },
+    {
+      video: '/media/',
+      title: 'Forum API (Video preview coming)',
+      description:
+        'RESTful forum API built with NestJS and TypeScript using DDD and Clean Architecture. Supports students, questions, and answers. Authentication via JWT (RSA256). Prisma + PostgreSQL for persistence. Tested with Vitest covering business rules and auth flows.',
+      link: 'https://github.com/J-V-S-C/nest-clean-forum',
+      tecs: [
+        'TypeScript',
+        'Nest.js',
+        'Prisma',
+        'PostgreSQL',
+        'Vitest',
+        'JWT (RSA256)',
+        'DDD',
+        'Clean Architecture',
+        'Swagger',
+      ],
     },
   ];
 
